@@ -8,31 +8,20 @@ class Auto:
         kuljettu_matka = 0
 
     def kiihdyta(self, muutos):
-        self.tamanhetkinen_nopeus = self.tamanhetkinen_nopeus + muutos
+        auto.tamanhetkinen_nopeus = auto.tamanhetkinen_nopeus + muutos
         if self.tamanhetkinen_nopeus <0:
             self.tamanhetkinen_nopeus = 0
         elif self.tamanhetkinen_nopeus > int(self.huippunopeus):
             self.tamanhetkinen_nopeus = int(self.huippunopeus)
         return self.tamanhetkinen_nopeus
+    def kulje(self, aika):
+        self.kuljettu_matka = self.kuljettu_matka + (self.tamanhetkinen_nopeus*aika)
+        return self.kuljettu_matka
 
 
-auto = Auto("ABC,123", 142,0,0)
+auto = Auto("ABC,123", 142,60,2000)
 
-muutos = 30
-auto.kiihdyta(muutos)
-muutos = 70
-Auto.kiihdyta(auto,muutos)
-
-muutos = 50
-auto.kiihdyta(muutos)
-print(auto.tamanhetkinen_nopeus)
-
-muutos = -200
-auto.kiihdyta(muutos)
-print(auto.tamanhetkinen_nopeus)
-
-
-auto.kiihdyta(muutos)
+auto.kulje(1.5)
 print(auto.rekisteritunnus)
 print(str(auto.huippunopeus) + " km/h")
 print(auto.kuljettu_matka)
