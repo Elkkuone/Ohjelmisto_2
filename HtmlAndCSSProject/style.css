@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(test.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto
+}
+.icon{
+    width: 1000px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: black;
+    background-color: lightgray;
+    float: left;
+    padding: 10px;
+}
+.menu{
+    width: 1000px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    font-family: Arial sans-serif;
+    list-style-type: none;
+    margin-left: 62px;
+    font-size: 24px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+ul li a:hover{
+    color: blanchedalmond;
+}
+.content{
+    width: 1200px;
+     height: auto;
+    margin: auto;
+    color: black;
+    position: static;
+}
+.content h1{
+   font-family: Arial;
+    font-size: 100px;
+    padding-left: 25%;
+    letter-spacing: 2px;
+
+}
+.content2{
+    background-image: url("bababab.jpg");
+
+}

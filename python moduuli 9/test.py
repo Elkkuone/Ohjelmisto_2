@@ -9,5 +9,3 @@ class Auto:
         self.kuljettu_matka = kuljettu_matka
         tamanhetkinen_nopeus = 0
         kuljettu_matka = 0
-
-
