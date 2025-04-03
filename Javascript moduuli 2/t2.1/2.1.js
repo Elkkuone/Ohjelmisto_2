@@ -1,0 +1,1 @@
+/* optimisoitu **/ let a=[],b=[],k=0;while(k<5){a.push(parseInt(prompt("numero")));k++}for(let i=0;i<5;i++){b+=a[4-i]+ ", "}console.log(b+" Tässä antamasi luvut toisinpäin")

@@ -1,0 +1,42 @@
+html {
+    background-color: #202526;
+    color: aliceblue;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: cadetblue;
+
+}
+
+nav {
+    background-color: cyan;
+}
+
+main {
+    background-color: #9c9cac;
+}
+
+section {
+    background-color: gold;
+}
+
+article {
+    background-color: indianred;
+}
+
+aside {
+    background-color: gainsboro;
+}
+
+footer {
+    background-color: teal;
+}
+
+form {
+    background-color: floralwhite;
+}

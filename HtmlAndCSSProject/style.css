@@ -1,22 +1,24 @@
 *{
-    margin: 0;
+    overscroll-behavior-y: none;
+    margin: auto;
     padding: 0;
+    font-family: Arial;
 }
 
-.main{
-    width: 100%;
+#main{
+    width: auto;
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(test.jpg);
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 135vh;
 }
 .navbar{
-    width: 1200px;
+    width: auto;
     height: 75px;
     margin: auto
 }
 .icon{
-    width: 1000px;
+    width: 95%;
     float: left;
     height: 70px;
 }
@@ -26,10 +28,12 @@
     background-color: lightgray;
     float: left;
     padding: 10px;
+    font-size: 3vw;
+    border-radius: 5px;
 }
 .menu{
-    width: 1000px;
-    float: left;
+    width: auto;
+    float: right;
     height: 70px;
 }
 ul{
@@ -39,35 +43,82 @@ ul{
     align-items: center;
 }
 ul li{
-    font-family: Arial sans-serif;
     list-style-type: none;
     margin-left: 62px;
-    font-size: 24px;
+    font-size: 3vw;
+    padding-right: 40px;
+
 }
 ul li a{
     text-decoration: none;
     color: #fff;
-
 }
 
 ul li a:hover{
     color: blanchedalmond;
 }
 .content{
-    width: 1200px;
+    width: auto;
      height: auto;
     margin: auto;
     color: black;
     position: static;
 }
 .content h1{
-   font-family: Arial;
-    font-size: 100px;
+    font-size: 10vw;
     padding-left: 25%;
     letter-spacing: 2px;
 
 }
-.content2{
+.content2 {
     background-image: url("bababab.jpg");
+    width: 65%;
+    height: 25vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
 
+}
+.lortsu{
+    padding: 20px;
+    font-size: 2vw;
+    width: 75%;
+}
+.products{
+    text-align: center;
+    font-size: 5vw;
+}
+.pictures{
+
+}
+article{
+    width: calc(100% / 3);
+    align-items: center;
+    float: left;
+    font-size: 2vw;
+}
+.imaged{
+    width: 80%;
+    align-items: center;
+    padding-top: 30px;
+
+}
+.contactt{
+    float: left;
+    font-size: 4vw;
+}
+.content3 h1{
+    font-size: 5vw;
+    padding-right: 30px;
+
+}
+.content3 p{
+    font-size: 2vw;
+}
+.kuva{
+    width: 60%;
+    border-radius: 8px;
+}
+.content3 h2{
+    font-size: 2vw;
 }

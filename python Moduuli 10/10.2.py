@@ -19,12 +19,15 @@ class Hissi:
 class Talo:
     Hissit = []
     def __init__(self, alin, ylin, maara):
-        self.hissiLista = [Hissi(alin, ylin)for i in range(maara)]
+        hissiLista = []
+        for hissi in range(maara):
+            self.hissiLista.append(Hissi(alin,ylin))
+
+        """self.hissiLista = (for i in range(maara) 
+        [Hissi(alin, ylin)])"""
     def liikkuu(self,hisnro,kerros):
         self.hissiLista[hisnro].siirryKerrokseen(kerros)
         print(f"Hissi {hisnro} on kerroksessa {kerros}")
-
-
 
 talo = Talo(0,5,5)
 
@@ -33,4 +36,3 @@ talo.liikkuu(0,4)
 talo.liikkuu(2,100)
 talo.liikkuu(3,5)
 talo.liikkuu(4,69420)
-
