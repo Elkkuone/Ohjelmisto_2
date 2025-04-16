@@ -20,6 +20,7 @@ class Lehti(Julkaisu):
         super().tulosta_tiedot()
         print(f"   päätoimittaja: {self.päätoimittaja}")
 
+
 class Kirja(Julkaisu):
     def __init__(self,kirja,kirjoittaja,sivumäärä):
         self.kirjoittaja = kirjoittaja
