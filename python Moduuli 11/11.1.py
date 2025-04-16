@@ -35,5 +35,6 @@ class Kirja(Julkaisu):
 kirjat = []
 kirjat.append(Lehti("Aku Ankka","Aki Hyyppä"))
 kirjat.append((Kirja("Hytti nor6 ", "Rosa likstrom", 200)))
+
 for k in kirjat:
     k.tulosta_tiedot()
