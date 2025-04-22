@@ -1,11 +1,9 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-@app.route('/alkuluku')
-def summa():
-    args = request.args
+@app.route('/alkuluku/<int:luku>')
+def summa(luku):
     isPrime = True
-    luku = int(args.get("luku"))
     for i in range(luku):
        if i == (luku-2):
            isPrime = True

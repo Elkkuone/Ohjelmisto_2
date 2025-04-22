@@ -10,7 +10,6 @@ class Julkaisu:
         if self.lehti is None:
             print(f"Kirja: {self.kirja}")
 
-
 class Lehti(Julkaisu):
     def __init__(self,lehti,päätoimittaja):
         self.päätoimittaja = päätoimittaja
