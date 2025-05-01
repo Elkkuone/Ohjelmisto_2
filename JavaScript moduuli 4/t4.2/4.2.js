@@ -1,12 +1,13 @@
-const search = document.querySelector("#secound")
-const input = document.querySelector('input[name=Important]')
+let form = document.getElementById("single")
 
-search.addEventListener('submit',function(evt){
+form.addEventListener("submit", evt=> {
     evt.preventDefault()
-    const query = input.value
-    console.log(query)
-    fetch("https:api.tvmaze.com/search/shows?q="+query)
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+    let query = document.getElementById('secound').value
+    console.log("fuck this"+ query)
+    fetch("https://api.tvmaze.com/search/shows?q=" + query)
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
 })
+
+
